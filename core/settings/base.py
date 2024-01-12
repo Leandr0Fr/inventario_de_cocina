@@ -19,7 +19,8 @@ BASE_APP = [
 ]
 
 LOCAL_APP = [
-    'apps.landing'
+    'apps.landing',
+    'apps.heladera',
 ]
 
 THIRD_APPS = [
