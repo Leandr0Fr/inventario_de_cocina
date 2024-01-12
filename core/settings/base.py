@@ -17,6 +17,7 @@ BASE_APP = [
 ]
 
 LOCAL_APP = [
+    'apps.landing'
 ]
 
 THIRD_APPS = [
