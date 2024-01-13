@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% block title %}Heladera{% endblock %}
+{% load static %}
+{% block content %}
+<div id="items-container" data-items="{% for item in list_items %}{{ item }},{% endfor %}"></div>
+<script src="{% static 'js/viewItems.js' %}"></script>
+heladera
+{% endblock %}
