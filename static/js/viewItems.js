@@ -27,6 +27,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 <section class="data-item">
                     <p class="date">Ingreso: ${itemObject.input_date}</p>
                     <p class="date">Vencimiento: ${itemObject.expiration_date}</p>
+                    <p class="amount">Peso: 1kg</p>
+                    <p class="amount">Litros: 1lt</p>
                     <p class="amount">Cantidad: ${itemObject.amount}</p>
                 </section>
                 <section class="controller-card">
