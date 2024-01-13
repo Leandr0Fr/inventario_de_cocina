@@ -21,6 +21,7 @@ BASE_APP = [
 LOCAL_APP = [
     'apps.landing',
     'apps.heladera',
+    'utils',
 ]
 
 THIRD_APPS = [
@@ -94,7 +95,7 @@ WSGI_APPLICATION = 'core.wsgi.application'
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC-3'
+TIME_ZONE = 'America/Argentina/Buenos_Aires'
 
 USE_I18N = True
 
