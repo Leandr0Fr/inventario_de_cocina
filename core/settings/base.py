@@ -24,6 +24,7 @@ LOCAL_APP = [
 ]
 
 THIRD_APPS = [
+    'django_seed',
 ]
 
 INSTALLED_APPS = BASE_APP + LOCAL_APP + THIRD_APPS
