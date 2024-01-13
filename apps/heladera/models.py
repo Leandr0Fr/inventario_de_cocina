@@ -3,7 +3,7 @@ class Heladera(models.Model):
 
     name = models.CharField(max_length=20)
     input_date = models.DateField(auto_now_add=True)
-    expiration_date = models.DateField()
+    expiration_date = models.DateField(null=True, blank=True)
     weight = models.FloatField(null=True, blank=True)
     liters = models.FloatField(null=True, blank=True)
     amount = models.IntegerField()
