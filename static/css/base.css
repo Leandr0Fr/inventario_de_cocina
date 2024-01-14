@@ -22,8 +22,7 @@ main{
     align-items: center;
     width: 100%;
     min-height: 100vh;
-    margin-top: 2vh;
-    margin-bottom: 2vh;
+    padding-top: 1em;
 }
 
 .menu-icon {
@@ -180,7 +179,7 @@ ul {
 }
 
 footer {
-    height: 12vh;
+    height: auto;
     background: gainsboro;
     display: flex;
     flex-direction: column;
@@ -211,9 +210,6 @@ h2{
 }
 
 @media screen and (max-width: 768px) {
-    footer{
-        height: auto;
-    }
     .socials{
         flex-direction: column;
         gap: 0.1em;
