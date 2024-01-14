@@ -5,7 +5,7 @@ from utils.pagination_heladera import Pag_heladera
 def view_page(request):
     pag = Pag_heladera()
     items = pag.get_items()
-    return render(request, 'heladera.html', {'list_items': items})
+    return render(request, 'heladera.html', {'list_items': items, 'actual_page': 1, 'total_pages': 20 })
 
 def create_item(request):
     if request.method == 'GET':
