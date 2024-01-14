@@ -14,7 +14,7 @@
 
 <body>
     <header>
-        <a href="#" class="logo"><span class="material-symbols-outlined">stockpot</span>
+        <a href="{% url 'home' %}" class="logo"><span class="material-symbols-outlined">stockpot</span>
             IDC
         </a>
         <section class="menu-icon">
@@ -28,9 +28,9 @@
         </section>
         <nav class="nav-bar">
             <ul>
-                <li>Heladera</li>
-                <li>Alacena</li>
-                <li>Utensilios</li>
+                <a href="{% url 'heladera' %}" class="nav-li"><li>Heladera</li></a>
+                <a href="#" class="nav-li"><li>Alacena</li></a>
+                <a href="#" class="nav-li"><li>Utensilios</li></a>
             </ul>
         </nav>
     </header>
@@ -38,9 +38,12 @@
         {% block content %}{% endblock %}
     </main> 
     <footer>
-        <img width="25" height="25" src="https://img.icons8.com/ios-filled/50/linkedin.png" alt="linkedin" class="social"/>
-        <img width="25" height="25" src="https://img.icons8.com/ios-filled/50/github.png" alt="github" class="social"/>
-        <img width="25" height="25" src="https://img.icons8.com/ios-filled/50/secured-letter--v1.png" alt="secured-letter--v1" class="social"/>
+        <section class="socials">
+        <a href="https://www.linkedin.com/in/leandro-fr/" target="_blank"><img width="25" height="25" src="https://img.icons8.com/ios-filled/50/linkedin.png" alt="linkedin" class="social"/></a>
+        <a href="https://github.com/Leandr0Fr" target="_blank"><img width="25" height="25" src="https://img.icons8.com/ios-filled/50/github.png" alt="github" class="social"/></a>
+        <a href="mailto:leandro00fr@gmail.com" target="_blank"><img width="25" height="25" src="https://img.icons8.com/ios-filled/50/secured-letter--v1.png" alt="secured-letter--v1" class="social"/></a>
+        </section>
+        <h2>Hecho con amor ♥</h2>
     </footer>    
 </body>
 
