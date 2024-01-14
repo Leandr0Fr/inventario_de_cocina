@@ -1,3 +1,6 @@
+main{
+    flex-direction: column;
+}
 .cards-container{
     display: flex;
     justify-content: center;
@@ -6,4 +9,71 @@
     gap: 1em;
     width: 90%;
     height: auto;
+}
+
+.nav-pages{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    align-items: center;
+}
+
+.navigation{
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1em;
+}
+
+.minor-and-major{
+    font-size: 2em;
+}
+
+.nav-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    gap: 0.5em;
+    cursor: pointer;
+}
+
+.nav-button:hover{
+    color: rgb(130, 119, 119)
+}
+
+.add-item-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 1em;
+    width: 1em;
+    font-size: 2em;
+    margin-right: 1em;
+    border-radius: 3px;
+    outline: 1px rgba(19, 202, 19, 0.777) solid;
+    background: rgba(21, 228, 21, 0.81);
+    cursor: pointer;
+}
+.invisible-space{
+    padding-right: 5em;
+}
+
+.pages{
+    display: flex;
+    gap: 0.5em;
+}
+
+.actual-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.5em;
+    outline: 0.5px rgb(88, 87, 87) solid;
+    background: gainsboro;
+    border-radius: 3px;
 }

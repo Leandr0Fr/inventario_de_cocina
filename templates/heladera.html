@@ -4,12 +4,22 @@
 {% block head %}
 <link rel="stylesheet" href="{% static 'css/card.css' %}">
 <link rel="stylesheet" href="{% static 'css/page.css' %}">
+<link href='https://unpkg.com/css.gg@2.0.0/icons/css/trash.css' rel='stylesheet'>
 {% endblock %}
 {% block content %}
 <main>
     <div id="items-container" data-items="{% for item in list_items %}{{ item }},{% endfor %}"></div>
     <script src="{% static 'js/viewItems.js' %}"></script>
+    <script src="{% static 'js/navigation.js' %}"></script>
     <section class="cards-container" id="cards-container"></section>
-    <section class="nav-pages"></section>
+    <section class="nav-pages">
+        <div class="invisible-space"></div>
+        <div class="navigation">
+            <button class="nav-button" id="previous"><span class="minor-and-major"><</span>Anterior</button>
+            <p class="pages"><span class="actual-page">{{actual_page}}</span> de <span class="total-pages">{{total_pages}}</span></p>
+            <button class="nav-button" id="advance">Siguiente<span class="minor-and-major">></span></button>
+        </div>
+        <button class="add-item-button">+</button>
+    </section>
 </main>
 {% endblock %}
