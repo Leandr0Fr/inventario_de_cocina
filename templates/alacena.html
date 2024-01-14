@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% block title %}Heladera{% endblock %}
+{% block title %}Utensilios{% endblock %}
 {% load static %}
 {% block head %}
 <link rel="stylesheet" href="{% static 'css/card.css' %}">
@@ -7,9 +7,8 @@
 {% endblock %}
 {% block content %}
 <main>
-    <div id="items-container" data-items="{% for item in list_items %}{{ item }},{% endfor %}"></div>
-    <script src="{% static 'js/viewItems.js' %}"></script>
     <section class="cards-container" id="cards-container"></section>
+    Scioli
     <section class="nav-pages"></section>
 </main>
 {% endblock %}
