@@ -4,6 +4,7 @@
 {% block head %}
 <link rel="stylesheet" href="{% static 'css/card.css' %}">
 <link rel="stylesheet" href="{% static 'css/page.css' %}">
+<link rel="stylesheet" href="{% static 'css/modal.css' %}">
 <link href='https://unpkg.com/css.gg@2.0.0/icons/css/trash.css' rel='stylesheet'>
 {% endblock %}
 {% block content %}
@@ -11,6 +12,28 @@
     <div id="items-container" data-items="{% for item in list_items %}{{ item }},{% endfor %}"></div>
     <script src="{% static 'js/viewItems.js' %}"></script>
     <script src="{% static 'js/navigation.js' %}"></script>
+    <script src="{% static 'js/dialog.js' %}"></script>
+    <dialog>
+        <section class="top-dialog">
+            <button class="hidden-button">X</button>
+            <legend>Ingrese los Datos</legend>
+            <button class="exit-button">X</button>
+        </section>
+        <form method="dialog">
+            <label for="GET-name">Nombre</label>
+            <input id="GET-name" type="text" name="name" maxlength="15" placeholder="Helado" required class="input-dialog"/>
+            <label for="GET-expiration-date">Fecha de vencimiento</label>
+            <input id="GET-expiration-date" type="date" name="expiration-date" placeholder="09-12-2018" required class="input-dialog"/>
+            <label for="GET-amount">Cantidad</label>
+            <input id="GET-amount" type="number" name="amount" minlength="1" placeholder="1" required class="input-dialog"/>
+            <label for="GET-weigth">Peso (kg)</label>
+            <input id="GET-weigth" type="number" name="weigth" placeholder="1" class="input-dialog"/>
+            <label for="GET-liter">Litros</label>
+            <input id="GET-liter" type="number" name="liter" class="input-dialog"/>
+            <button class="post-button">Añadir</button>
+        </form>
+    </dialog>
+
     <section class="cards-container" id="cards-container"></section>
     <section class="nav-pages">
         <div class="invisible-space"></div>

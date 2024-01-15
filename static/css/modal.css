@@ -1,0 +1,88 @@
+dialog {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+  width: 26em;
+  height: 32em;
+  border: none;
+  outline: 3px solid gainsboro;
+  border-radius: 3px;
+}
+
+dialog::backdrop{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.top-dialog {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2em;
+}
+
+legend {
+  font-size: 2em;
+}
+
+.exit-button {
+  font-size: 2em;
+}
+
+label {
+  font-size: 1.5em;
+}
+
+.input-dialog {
+  padding: 0.5em;
+  width: 100%;
+  border-radius: 4px;
+  font-size: 1.2em;
+  border: none;
+  outline: 2px solid black;
+  height: 2em;
+}
+
+.post-button {
+  margin-top: 0.2em;
+  font-size: 2em;
+  border-radius: 3px;
+  width: 4em;
+  text-align: center;
+  text-transform: uppercase;
+  outline: 1px rgba(19, 202, 19, 0.777) solid;
+  background: rgba(21, 228, 21, 0.81);
+  cursor: pointer;
+}
+
+.hidden-button {
+  font-size: 1.5em;
+  width: 1.5em;
+  visibility: hidden;
+}
+
+.exit-button {
+  border-radius: 3px;
+  font-size: 1.5em;
+  width: 1.5em;
+  justify-content: center;
+  text-align: center;
+  text-transform: uppercase;
+  outline: 1px rgb(249, 61, 61) solid;
+  background: rgb(233, 101, 101);
+  cursor: pointer;
+}
