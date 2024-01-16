@@ -26,10 +26,14 @@
             <input id="GET-expiration-date" type="date" name="expiration-date" required class="input-dialog"/>
             <label for="GET-amount">Cantidad</label>
             <input id="GET-amount" type="number" name="amount" minlength="1" placeholder="1" required class="input-dialog"/>
-            <label for="GET-weigth">Peso (kg)</label>
-            <input id="GET-weigth" type="number" name="weigth" placeholder="1" class="input-dialog"/>
-            <label for="GET-liter">Litros</label>
-            <input id="GET-liter" type="number" name="liter" class="input-dialog"/>
+            <label for="unit">Unidad</label>
+            <select id="unit" name="unit" class="input-dialog" required>
+                <option value="" disabled selected>Selecciona una unidad</option>
+                <option value="KG">Kilogramos</option>
+                <option value="LT">Litros</option>
+            </select>
+            <label for="GET-weight">Cantidad</label>
+            <input id="GET-quantity" type="number" name="quantity" placeholder="1" class="input-dialog"/>
             <button class="post-button">Añadir</button>
         </form>
     </dialog>

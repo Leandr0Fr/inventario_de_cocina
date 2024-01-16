@@ -49,13 +49,13 @@ label {
 }
 
 .input-dialog {
-  padding: 0.5em;
+  padding-left: 0.5em;
   width: 100%;
   border-radius: 4px;
   font-size: 1.2em;
   border: none;
   outline: 2px solid black;
-  height: 2em;
+  height: 2.2em;
 }
 
 .post-button {

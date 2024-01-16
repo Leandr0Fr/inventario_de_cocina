@@ -20,15 +20,20 @@ document.addEventListener("DOMContentLoaded", function() {
         if (Object.keys(itemObject).length > 0) {
             const card = document.createElement("div");
             card.className = "card";
-
+            unit = null;
+            if (itemObject.unit === "LT"){
+                unit = "Litros";
+            }
+            if (itemObject.unit === "KG"){
+                unit = "Kilogramos";
+            }
             card.innerHTML = `
                 <div class="head-card">${itemObject.name}</div>
                 <div class="divider"></div>
                 <section class="data-item">
                     <p class="date">Ingreso: ${itemObject.input_date}</p>
                     <p class="date">Vencimiento: ${itemObject.expiration_date}</p>
-                    <p class="amount">Peso: 1kg</p>
-                    <p class="amount">Litros: 1lt</p>
+                    <p class="amount">${unit}: ${itemObject.quantity}</p>
                     <p class="amount">Cantidad: ${itemObject.amount}</p>
                 </section>
                 <section class="controller-card">
