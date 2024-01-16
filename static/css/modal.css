@@ -9,7 +9,7 @@ dialog {
   align-items: center;
   z-index: 1;
   width: 26em;
-  height: 32em;
+  height: 34em;
   border: none;
   outline: 3px solid gainsboro;
   border-radius: 3px;
@@ -25,6 +25,7 @@ dialog::backdrop{
   justify-content: space-around;
   align-items: center;
   text-align: center;
+  margin-bottom: 0.5em;
 }
 
 form {
@@ -58,7 +59,7 @@ label {
 }
 
 .post-button {
-  margin-top: 0.2em;
+  margin-top: 0.3em;
   font-size: 2em;
   border-radius: 3px;
   width: 4em;
@@ -85,4 +86,84 @@ label {
   outline: 1px rgb(249, 61, 61) solid;
   background: rgb(233, 101, 101);
   cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {    
+  legend {
+    font-size: 1.7em;
+  }
+
+  .exit-button {
+    font-size: 1.2em;
+    width: 1.2em;
+  }
+
+  .hidden-button {
+    font-size: 1.2em;
+    width: 1.2em;
+  }
+
+  .post-button {
+    font-size: 1.5em;
+    width: 4em;
+    margin-top: 0.5em;
+  }
+
+  .input-dialog {
+    padding: 0.2em;
+    width: 80%;
+    font-size: 1.2em;
+    outline: 1px solid black;
+  }
+
+}
+
+@media screen and (max-height: 550px) and (orientation: landscape) {
+  dialog{
+    width: 18em;
+    height: 24em;
+    overflow: scroll;
+  }
+
+  .top-dialog {
+    margin-bottom: 0.2em;
+  }
+
+  form {
+    gap: 0.1em;
+  }
+
+  legend {
+    font-size: 1.1em;
+  }
+  
+  .exit-button {
+    font-size: 1.1em;
+  }
+  
+  label {
+    font-size: 1.1em;
+  }
+
+  .input-dialog {
+    width: 60%;
+    padding: 0.2em;
+    font-size: 1em;
+    height: 1.8em;
+  }
+
+  .post-button {
+    margin-top: 0.5em;
+    font-size: 1.2em;
+  }
+  
+  .hidden-button {
+    font-size: 1em;
+    width: 1em;
+  }
+  
+  .exit-button {
+    font-size: 1em;
+    width: 1em;
+  }
 }
