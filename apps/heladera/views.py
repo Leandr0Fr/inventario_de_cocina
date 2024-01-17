@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.http import JsonResponse
 from .models import Heladera
 from utils.pagination_heladera import Pag_heladera
 
@@ -10,3 +11,6 @@ def view_page(request):
 def create_item(request):
     if request.method == 'GET':
         raise ValueError("Get method is not accepted")
+
+def exists_name(request, name):
+    return JsonResponse({"exists": bool(Heladera.exists_name(name))}, status=200)
