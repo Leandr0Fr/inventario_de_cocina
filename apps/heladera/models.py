@@ -18,4 +18,6 @@ class Heladera(models.Model):
     
     @staticmethod
     def exists_name(name_input: str) -> bool:
+        if name_input is None:
+            raise ValueError("input is None")
         return Heladera.objects.filter(name = name_input).exists()
