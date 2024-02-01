@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", () => {
     const actualPage = document.querySelector(".actual-page");
     const totalPages = document.querySelector(".total-pages");
     const previousPage = document.getElementById("previous");
