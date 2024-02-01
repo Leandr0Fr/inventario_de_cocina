@@ -10,9 +10,6 @@
 {% block content %}
 <main>
     <div id="items-container" data-items="{% for item in list_items %}{{ item }},{% endfor %}"></div>
-    <script src="{% static 'js/viewItems.js' %}"></script>
-    <script src="{% static 'js/navigation.js' %}"></script>
-    <script src="{% static 'js/dialog.js' %}"></script>
     <dialog>
         <section class="top-dialog">
             <button class="hidden-button">X</button>
@@ -49,4 +46,10 @@
         <button class="add-item-button">+</button>
     </section>
 </main>
+<script src="{% static 'js/viewItems.js' %}"></script>
+<script src="{% static 'js/navigation.js' %}"></script>
+<script src="{% static 'js/dialog.js' %}"></script>
+<script src="{% static 'js/validForm.js' %}"></script>
+<script src="{% static 'js/view.js' %}"></script>
+
 {% endblock %}
